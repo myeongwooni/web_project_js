@@ -35,7 +35,7 @@ const toDoform = document.querySelector(".js-toDoForm"),
         const span = document.createElement("span");
         const newID = toDos.length + 1;
 
-        delBtn.innerText = "❌";        
+        delBtn.innerText = "✔️";        
         span.innerText = text;
         delBtn.addEventListener("click", deleteToDo);
 

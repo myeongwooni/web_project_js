@@ -4,32 +4,43 @@
 <head>
     <title>JS Clock</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
+    
 </head>
 
 
 <body>
+    <header id="header">
+        <span class="js-weather"></span>
+    </header>
+
     <div class="js-clock">
-        <h1 >00:00</h1>
+        <h1 ></h1>
+    </div>
+    
+    <div id="container">
+
+        <div id="name">
+            <form class="js-form form">
+                <input type="text" placeholder="What is your name?"/>
+            </form>
+        
+
+            <div class="greeting">
+                <h4 class="js-greetings greetings"></h4>
+            </div>
+        </div>
+
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a to do"/>
+        </form>
+        
     </div>
 
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?" />
-    </form>
+    <ul class="js-toDoList"></ul>
 
-    <form class="js-form form">
-        <input type="text">
-    </form>
-
-    <h4 class="js-greetings greetings"></h4>
-
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do"/>
-    </form>
-
-    <ul class="js-toDoList">
-    </ul>
-
+    
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
